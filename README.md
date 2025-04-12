@@ -4,6 +4,10 @@ This is a simple **Spring Boot CRUD REST API** for managing employees. The proje
 
 ---
 
+### YouTube link: 
+https://youtu.be/WY3Jw8oFBZc
+
+---
 ## 📋 Assignment Scope
 
 ### ✅ Features Implemented:

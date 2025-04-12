@@ -28,12 +28,12 @@ public class EmployeeController {
     }
 
     @PostMapping("/")
-    public ApiResponse<Employee> createNewEmployee(@RequestBody Employee employee){
+    public ApiResponse<Employee> createNewEmployee(@Valid @RequestBody Employee employee){
         return new ApiResponse<>(true, "Employee created successfully", service.createEmployee(employee));
     }
 
     @PutMapping("/{id}")
-    public ApiResponse<Employee> updateEmployee(@PathVariable int id, @RequestBody Employee employee){
+    public ApiResponse<Employee> updateEmployee(@PathVariable int id, @Valid @RequestBody Employee employee){
         return new ApiResponse<>( true,  "Employee updated successfully", service.updateEmployee(id, employee));
     }
 
